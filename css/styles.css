@@ -1,0 +1,3015 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+a img {
+  border: none;
+}
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+  margin-bottom: 1.5rem;
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe:not([id^=google_ads_iframe]),
+object {
+  max-width: 100%;
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 0px;
+}
+
+.post, .page {
+  margin: 0 0 0em;
+}
+
+/*--------------------------------------------------------------
+# Clearfix
+--------------------------------------------------------------*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.float-r {
+  float: right;
+}
+
+/*--------------------------------------------------------------
+# Wrappers / Containers
+--------------------------------------------------------------*/
+@media screen and (max-width: 5000px) {
+  .content-wrapper-lg {
+    max-width: 1420px;
+    margin: auto;
+    padding: 1.5rem;
+  }
+  .content-wrapper-md {
+    max-width: 940px;
+    margin: 0rem auto;
+    padding: 1.5rem;
+  }
+  .content-wrapper-sm {
+    max-width: 700px;
+    margin: 0rem auto;
+    padding: 1.5rem;
+  }
+}
+/*--------------------------------------------------------------
+# WP Resets
+--------------------------------------------------------------*/
+section {
+  padding: 0rem;
+}
+
+.btn, .btn:link, .btn:visited {
+  transition: all 0.2s;
+  font-size: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+  transition: all ease 1s;
+  border-radius: 0;
+  display: inline;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 1.5rem 2rem;
+}
+@media (max-width: 650px) {
+  .btn, .btn:link, .btn:visited {
+    display: block;
+  }
+}
+.btn:hover {
+  transform: translateY(-4px);
+  text-decoration: none;
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+.btn--gold-outline {
+  padding: 1rem 1.5rem;
+  border: 4px solid #bd9a5f !important;
+  color: #000 !important;
+  text-decoration: none;
+  text-transform: none;
+}
+.btn--gold-outline:hover, .btn--gold-outline:focus {
+  background: #bd9a5f !important;
+  color: #fff !important;
+  border: 4px solid #bd9a5f !important;
+}
+.btn--gold-filled {
+  padding: 1rem 1.5rem;
+  border: 4px solid #98571D !important;
+  background: #98571D;
+  color: #fff !important;
+  text-decoration: none;
+  text-transform: none;
+}
+.btn--gold-filled img {
+  vertical-align: middle;
+}
+.btn--gold-filled:hover, .btn--gold-filled:focus {
+  color: black !important;
+  background: transparent !important;
+  border: 4px solid #98571D !important;
+}
+.btn--green-filled {
+  padding: 1rem 1.5rem;
+  border: none;
+  background: #4a6741;
+  color: #fff !important;
+  text-decoration: none;
+  text-transform: none;
+}
+.btn--green-filled:hover, .btn--green-filled:focus {
+  border: 4px solid #4a6741 !important;
+  color: #000 !important;
+  background: transparent;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/*--------------------------------------------------------------
+# Font Resets
+--------------------------------------------------------------*/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  width: auto;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 10px;
+  text-rendering: optimizeLegibility;
+}
+
+p a {
+  text-decoration: underline;
+  color: #98571D;
+}
+p a:hover {
+  color: #98571D;
+}
+
+p, h1, h2, h3, h4, h5 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+p a:hover, a:hover, a:visited, a:focus {
+  text-decoration: none;
+  cursor: pointer;
+  color: #98571D;
+}
+
+a:active,
+a:hover,
+a:focus,
+a:visited {
+  outline: 0;
+  text-decoration: none;
+  border: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, p, span {
+  letter-spacing: 0;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/*--------------------------------------------------------------
+# Font Classes
+--------------------------------------------------------------*/
+.montserrat {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.im-english {
+  font-family: "IM Fell English", serif;
+}
+
+/*--------------------------------------------------------------
+# Typography Styling
+--------------------------------------------------------------*/
+h1, h1 a, h1 span {
+  font-family: "IM Fell English", serif;
+  font-size: 5.375rem;
+  line-height: 6.181rem;
+  font-weight: 400;
+  color: #000;
+  font-style: normal;
+}
+@media (max-width: 650px) {
+  h1, h1 a, h1 span {
+    font-family: "IM Fell English", serif;
+    font-size: 3.649rem;
+    line-height: 4.196rem;
+    font-weight: 400;
+    color: #000;
+    font-style: normal;
+  }
+}
+
+h2, h2 a {
+  font-family: "IM Fell English", serif;
+  font-size: 4.479rem;
+  line-height: 5.151rem;
+  font-weight: 400;
+  color: #98571D;
+  font-style: normal;
+}
+@media (max-width: 650px) {
+  h2, h2 a {
+    font-family: "IM Fell English", serif;
+    font-size: 3.244rem;
+    line-height: 3.731rem;
+    font-weight: 400;
+    color: #98571D;
+    font-style: normal;
+  }
+}
+
+h3, h3 a {
+  font-family: "IM Fell English", serif;
+  font-size: 3.732rem;
+  line-height: 4.292rem;
+  font-weight: 400;
+  color: #000;
+  font-style: normal;
+}
+@media (max-width: 650px) {
+  h3, h3 a {
+    font-family: "IM Fell English", serif;
+    font-size: 2.883rem;
+    line-height: 3.315rem;
+    font-weight: 400;
+    color: #000;
+    font-style: normal;
+  }
+}
+
+h3.massilia {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.732rem;
+  line-height: 4.292rem;
+  font-weight: 400;
+  color: #000;
+  font-style: normal;
+}
+h3.massilia a {
+  color: #98571D;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 400;
+}
+@media (max-width: 650px) {
+  h3.massilia {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.883rem;
+    line-height: 3.315rem;
+    font-weight: 400;
+    color: #000;
+    font-style: normal;
+  }
+}
+
+h4 {
+  font-family: "IM Fell English", serif;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  font-weight: 400;
+  color: #fff;
+  font-style: normal;
+}
+@media (max-width: 650px) {
+  h4 {
+    font-family: "IM Fell English", serif;
+    font-size: 2.025rem;
+    line-height: 2.329rem;
+    font-weight: 400;
+    color: #fff;
+    font-style: normal;
+  }
+}
+
+p.large, span.large {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  font-weight: 300;
+  color: #000;
+  font-style: normal;
+}
+p.large strong, p.large b, span.large strong, span.large b {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  font-weight: 400;
+  color: #000;
+  font-style: normal;
+}
+p.large em, p.large i, span.large em, span.large i {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  font-weight: 300;
+  color: #000;
+  font-style: italic;
+}
+p.large em a, p.large i a, span.large em a, span.large i a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  font-weight: 300;
+  color: #98571D;
+  font-style: italic;
+  text-decoration: underline;
+}
+p.large a, span.large a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  font-weight: 300;
+  color: #98571D;
+  font-style: normal;
+  text-decoration: underline;
+}
+p.large a strong, span.large a strong {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  font-weight: 400;
+  color: #98571D;
+  font-style: normal;
+}
+@media (max-width: 650px) {
+  p.large, span.large {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 300;
+    color: #000;
+    font-style: normal;
+  }
+  p.large a, span.large a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 300;
+    color: #98571D;
+    font-style: normal;
+  }
+}
+
+p.large-white, span.large-white {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  line-height: 3.36rem;
+  font-weight: 400;
+  color: #fff;
+  font-style: normal;
+}
+p.large-white a, span.large-white a {
+  color: #fff;
+}
+
+p, span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #000;
+  font-style: normal;
+}
+p a, span a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #98571D;
+  font-style: normal;
+}
+p strong, span strong {
+  font-family: "IM Fell English", serif;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  font-weight: 400;
+  color: #000;
+  font-style: normal;
+}
+p strong a, span strong a {
+  font-family: "IM Fell English", serif;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  font-weight: 400;
+  color: #98571D;
+  font-style: normal;
+}
+
+figcaption {
+  font-size: 1.4rem;
+  line-height: 2.16rem;
+  margin: 8px 0;
+}
+
+p.small, p.small a, span.small, span.small a, small, small a, p.meta {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+  color: #000;
+}
+p.small em, p.small i, p.small a em, p.small a i, span.small em, span.small i, span.small a em, span.small a i, small em, small i, small a em, small a i, p.meta em, p.meta i {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+  color: #000;
+  font-style: italic;
+}
+p.small em a, p.small i a, p.small a em a, p.small a i a, span.small em a, span.small i a, span.small a em a, span.small a i a, small em a, small i a, small a em a, small a i a, p.meta em a, p.meta i a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+  color: #98571D;
+  font-style: italic;
+  text-decoration: underline;
+}
+p.small strong, p.small b, p.small a strong, p.small a b, span.small strong, span.small b, span.small a strong, span.small a b, small strong, small b, small a strong, small a b, p.meta strong, p.meta b {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+  color: #000;
+  font-style: normal;
+}
+
+b, strong {
+  color: #000;
+  font-family: "IM Fell English", serif;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: none;
+}
+b em, strong em {
+  font-family: "IM Fell English", serif;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  font-weight: 500;
+  font-style: italic;
+}
+b a, strong a {
+  color: #98571D;
+  text-decoration: underline;
+}
+
+em, i {
+  font-style: italic;
+}
+em a, i a {
+  font-style: italic;
+}
+
+ul {
+  margin-left: 0;
+  padding-inline-start: 20px;
+}
+ul li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 1rem;
+}
+ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #98571D;
+  text-decoration: underline;
+}
+ul li a:hover {
+  color: #98571D;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 0%;
+  padding-inline-start: 25px;
+}
+ol li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 1rem;
+}
+ol li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #98571D;
+  text-decoration: underline;
+}
+ol li a:hover {
+  color: #98571D;
+}
+ol ol {
+  list-style: lower-alpha;
+}
+ol ol li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 1rem;
+}
+ol ol li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+  color: #98571D;
+  text-decoration: underline;
+}
+ol ol li a:hover {
+  color: #98571D;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 2%;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 2%;
+}
+
+p.white a {
+  color: #fff !important;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+form button,
+form input[type=button],
+form input[type=reset],
+form input[type=submit] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  max-width: 100%;
+  padding: 0.5em 2em;
+}
+
+
+
+input[type=text]:-moz-placeholder,
+input[type=email]:-moz-placeholder,
+input[type=url]:-moz-placeholder,
+input[type=password]:-moz-placeholder,
+input[type=search]:-moz-placeholder,
+input[type=number]:-moz-placeholder,
+input[type=tel]:-moz-placeholder,
+input[type=range]:-moz-placeholder,
+input[type=date]:-moz-placeholder,
+input[type=month]:-moz-placeholder,
+input[type=week]:-moz-placeholder,
+input[type=time]:-moz-placeholder,
+input[type=datetime]:-moz-placeholder,
+input[type=datetime-local]:-moz-placeholder,
+input[type=color]:-moz-placeholder,
+textarea:-moz-placeholder {
+  border: none;
+  outline: none;
+  font: 400 1.6rem/2.4rem "Montserrat", sans-serif;
+  color: #000;
+}
+
+input[type=text]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+input[type=url]:-ms-input-placeholder,
+input[type=password]:-ms-input-placeholder,
+input[type=search]:-ms-input-placeholder,
+input[type=number]:-ms-input-placeholder,
+input[type=tel]:-ms-input-placeholder,
+input[type=range]:-ms-input-placeholder,
+input[type=date]:-ms-input-placeholder,
+input[type=month]:-ms-input-placeholder,
+input[type=week]:-ms-input-placeholder,
+input[type=time]:-ms-input-placeholder,
+input[type=datetime]:-ms-input-placeholder,
+input[type=datetime-local]:-ms-input-placeholder,
+input[type=color]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font: 400 1.6rem/2.4rem "Montserrat", sans-serif;
+  color: #000;
+  border: none;
+  outline: none;
+}
+
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=url]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder,
+input[type=search]::-webkit-input-placeholder,
+input[type=number]::-webkit-input-placeholder,
+input[type=tel]::-webkit-input-placeholder,
+input[type=range]::-webkit-input-placeholder,
+input[type=date]::-webkit-input-placeholder,
+input[type=month]::-webkit-input-placeholder,
+input[type=week]::-webkit-input-placeholder,
+input[type=time]::-webkit-input-placeholder,
+input[type=datetime]::-webkit-input-placeholder,
+input[type=datetime-local]::-webkit-input-placeholder,
+input[type=color]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font: 400 1.6rem/2.4rem "Montserrat", sans-serif;
+  color: #000;
+  border: none;
+  outline: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: 400 1.6rem/2.4rem "Montserrat", sans-serif;
+}
+
+textarea {
+  max-width: 100%;
+}
+
+input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=range], input[type=date], input[type=month], input[type=week],
+input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], textarea, select, input[type=name], input, select {
+  font: 400 1.6rem/2.4rem "Montserrat", sans-serif;
+  color: #000;
+  padding: 1.5rem;
+  border: 2px solid #98571D;
+  border-radius: 0;
+  width:90%;
+}
+input[type=text]:hover, input[type=text]:focus, input[type=email]:hover, input[type=email]:focus, input[type=url]:hover, input[type=url]:focus, input[type=password]:hover, input[type=password]:focus, input[type=search]:hover, input[type=search]:focus, input[type=number]:hover, input[type=number]:focus, input[type=tel]:hover, input[type=tel]:focus, input[type=range]:hover, input[type=range]:focus, input[type=date]:hover, input[type=date]:focus, input[type=month]:hover, input[type=month]:focus, input[type=week]:hover, input[type=week]:focus,
+input[type=time]:hover,
+input[type=time]:focus, input[type=datetime]:hover, input[type=datetime]:focus, input[type=datetime-local]:hover, input[type=datetime-local]:focus, input[type=color]:hover, input[type=color]:focus, textarea:hover, textarea:focus, div.wpforms-container-full .wpforms-form select:hover, div.wpforms-container-full .wpforms-form select:focus, div.wpforms-container-full .wpforms-form input.wpforms-field-large:hover, div.wpforms-container-full .wpforms-form input.wpforms-field-large:focus, div.wpforms-container-full .wpforms-form select.wpforms-field-large:hover, div.wpforms-container-full .wpforms-form select.wpforms-field-large:focus, div.wpforms-container-full .wpforms-form select:hover, div.wpforms-container-full .wpforms-form select:focus {
+  border: 2px solid #708313;
+}
+
+form button[type=submit]{
+  background: #4a6741;
+  color: #fff;
+  border: none;
+  outline: none;
+  font: 400 1.6rem/2.4rem "Montserrat", sans-serif;
+  border-radius: 0;
+  width: 100%;
+  padding:2rem;
+  width:fit-content;
+}
+input[type=submit]:hover, input[type=submit]:focus {
+  background: #4d5911;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Flex Classes
+--------------------------------------------------------------*/
+.display-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.align-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-content: center;
+  align-content: center;
+}
+
+.align-top {
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  align-content: flex-start;
+  -webkit-align-content: flex-start;
+  -webkit-box-align: start;
+}
+
+/*--------------------------------------------------------------
+# Spacing
+--------------------------------------------------------------*/
+.row-space-between {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+}
+
+.row-space-around {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+}
+
+.row-space-evenly {
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+}
+
+.justify-centered {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.justify-left {
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.justify-right {
+  -webkit-justify-content: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+# Flex Width Classes
+--------------------------------------------------------------*/
+.flex-10 {
+  flex: 0 0 10%;
+}
+@media (max-width: 768px) {
+  .flex-10 {
+    flex: 0 0 100%;
+  }
+}
+
+.flex-15 {
+  flex: 0 0 15%;
+}
+@media (max-width: 768px) {
+  .flex-15 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-20 {
+  flex: 0 0 20%;
+}
+@media (max-width: 768px) {
+  .flex-20 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-25 {
+  flex: 0 0 25%;
+}
+@media (max-width: 768px) {
+  .flex-25 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-30 {
+  flex: 0 0 30%;
+}
+@media (max-width: 768px) {
+  .flex-30 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-33 {
+  flex: 0 0 33%;
+}
+@media (max-width: 768px) {
+  .flex-33 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-35 {
+  flex: 0 0 35%;
+}
+@media (max-width: 768px) {
+  .flex-35 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-40 {
+  flex: 0 0 40%;
+}
+@media (max-width: 1150px) {
+  .flex-40 {
+    flex: 0 0 38%;
+  }
+}
+@media (max-width: 768px) {
+  .flex-40 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-40-masthead {
+  flex: 0 0 40%;
+}
+@media (max-width: 768px) {
+  .flex-40-masthead {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-45 {
+  flex: 0 0 45%;
+}
+@media (max-width: 768px) {
+  .flex-45 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-50 {
+  flex: 0 0 50%;
+}
+@media (max-width: 1150px) {
+  .flex-50 {
+    flex: 0 0 48%;
+  }
+}
+@media (max-width: 768px) {
+  .flex-50 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-60 {
+  flex: 0 0 60%;
+}
+@media (max-width: 1150px) {
+  .flex-60 {
+    flex: 0 0 55%;
+  }
+}
+@media (max-width: 768px) {
+  .flex-60 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-60-masthead {
+  flex: 0 0 60%;
+}
+@media (max-width: 1150px) {
+  .flex-60-masthead {
+    flex: 0 0 55%;
+  }
+}
+@media (max-width: 768px) {
+  .flex-60-masthead {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-70 {
+  flex: 0 0 70%;
+}
+@media (max-width: 1150px) {
+  .flex-70 {
+    flex: 0 0 65%;
+  }
+}
+@media (max-width: 768px) {
+  .flex-70 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-75 {
+  flex: 0 0 75%;
+}
+@media (max-width: 1150px) {
+  .flex-75 {
+    flex: 0 0 65%;
+  }
+}
+@media (max-width: 768px) {
+  .flex-75 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-80 {
+  flex: 0 0 80%;
+}
+@media (max-width: 1150px) {
+  .flex-80 {
+    flex: 0 0 75%;
+  }
+}
+@media (max-width: 768px) {
+  .flex-80 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-85 {
+  flex: 0 0 85%;
+}
+@media (max-width: 1150px) {
+  .flex-85 {
+    flex: 0 0 80%;
+  }
+}
+@media (max-width: 768px) {
+  .flex-85 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-90 {
+  flex: 0 0 90%;
+}
+@media (max-width: 768px) {
+  .flex-90 {
+    flex: 0 0 100% !important;
+  }
+}
+
+.flex-100 {
+  flex: 0 0 100%;
+}
+
+.flex-10-om {
+  flex: 0 0 10%;
+}
+
+.flex-15-om {
+  flex: 0 0 15%;
+}
+
+.flex-20-om {
+  flex: 0 0 20%;
+}
+
+.flex-25-om {
+  flex: 0 0 25%;
+}
+
+.flex-30-om {
+  flex: 0 0 30%;
+}
+
+.flex-33-om {
+  flex: 0 0 33%;
+}
+
+.flex-35-om {
+  flex: 0 0 35%;
+}
+
+.flex-40-om {
+  flex: 0 0 40%;
+}
+
+.flex-45-om {
+  flex: 0 0 45%;
+}
+
+.flex-50-om {
+  flex: 0 0 50%;
+}
+
+.flex-60-om {
+  flex: 0 0 60%;
+}
+
+.flex-70-om {
+  flex: 0 0 70%;
+}
+
+.flex-80-om {
+  flex: 0 0 80%;
+}
+
+.flex-90-om {
+  flex: 0 0 90%;
+}
+
+.order-two-m {
+  order: 1;
+}
+@media (max-width: 768px) {
+  .order-two-m {
+    order: 2;
+  }
+}
+
+.order-one-m {
+  order: 2;
+}
+@media (max-width: 768px) {
+  .order-one-m {
+    order: 1;
+  }
+}
+
+/*--------------------------------------------------------------
+  # Padding and Margin Classes
+  --------------------------------------------------------------*/
+.p2 {
+  padding: 2rem;
+}
+
+.pad-1 {
+  padding: 1rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+@media (max-width: 991px) {
+  .pr-1 {
+    padding-right: 0rem;
+  }
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+@media (max-width: 991px) {
+  .pl-1 {
+    padding-left: 0rem;
+  }
+}
+
+.p2-l {
+  padding-left: 2rem;
+}
+
+.ptb-1 {
+  padding: 1rem 0rem;
+}
+
+.p5-tb {
+  padding: 5rem 0rem;
+}
+
+.p3-tb {
+  padding: 3rem 0rem;
+}
+@media (max-width: 991px) {
+  .p3-tb {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.p2-tb {
+  padding: 2rem 0rem;
+}
+
+.p15-rl {
+  padding: 0rem 15px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.p2-rl {
+  padding: 0rem 2rem;
+}
+
+.p3-rl {
+  padding: 0px 30px;
+}
+
+.p2-r {
+  padding: 0rem 2rem 0em 0em;
+}
+
+.p2-l {
+  padding: 0rem 0rem 0em 2em;
+}
+
+.p3-r {
+  padding: 0rem 3rem 0em 0em;
+}
+
+.p3-l {
+  padding: 0rem 0rem 0em 3em;
+}
+
+.p4-l {
+  padding: 0rem 0rem 0em 8rem;
+}
+@media (max-width: 768px) {
+  .p4-l {
+    padding: 2rem 0rem 0em 0em;
+  }
+}
+
+.p4-r {
+  padding: 0rem 8rem 0em 0em;
+}
+@media (max-width: 768px) {
+  .p4-r {
+    padding: 0rem 0rem 2em 0em;
+  }
+}
+
+.pb-5 {
+  padding-bottom: 5rem;
+}
+
+.ptb-2 {
+  padding: 2rem 0rem;
+}
+
+.p2-t {
+  padding-top: 2rem;
+}
+
+.p2-b {
+  padding-bottom: 2rem;
+}
+
+.p1-tb {
+  padding: 1rem 0rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.p2-nm {
+  padding: 2rem;
+}
+@media (max-width: 768px) {
+  .p2-nm {
+    padding: 0;
+  }
+}
+
+.ptb-1-nm {
+  padding: 1rem 0rem;
+}
+@media (max-width: 768px) {
+  .ptb-1-nm {
+    padding: 0;
+  }
+}
+
+.p5-tb-nm {
+  padding: 5rem 0rem;
+}
+@media (max-width: 768px) {
+  .p5-tb-nm {
+    padding: 0;
+  }
+}
+
+.p3-tb-nm {
+  padding: 3rem 0rem;
+}
+@media (max-width: 768px) {
+  .p3-tb-nm {
+    padding: 0;
+  }
+}
+
+.p2-tb-nm {
+  padding: 2rem 0rem;
+}
+@media (max-width: 768px) {
+  .p2-tb-nm {
+    padding: 0;
+  }
+}
+
+.p15-rl-nm {
+  padding: 0rem 15px;
+}
+@media (max-width: 768px) {
+  .p15-rl-nm {
+    padding: 0;
+  }
+}
+
+.pr-15-nm {
+  padding-right: 15px;
+}
+@media (max-width: 768px) {
+  .pr-15-nm {
+    padding: 0;
+  }
+}
+
+.pl-15-nm {
+  padding-left: 15px;
+}
+@media (max-width: 768px) {
+  .pl-15-nm {
+    padding: 0;
+  }
+}
+
+.p2-rl-nm {
+  padding: 0rem 2rem;
+}
+@media (max-width: 768px) {
+  .p2-rl-nm {
+    padding: 0;
+  }
+}
+
+.p3-rl-nm {
+  padding: 0px 30px;
+}
+@media (max-width: 768px) {
+  .p3-rl-nm {
+    padding: 0;
+  }
+}
+
+.p2-r-nm {
+  padding: 0rem 2rem 0em 0em;
+}
+@media (max-width: 1150px) {
+  .p2-r-nm {
+    padding: 0rem 1rem 0em 0em;
+  }
+}
+@media (max-width: 768px) {
+  .p2-r-nm {
+    padding: 0;
+  }
+}
+
+.p2-l-nm {
+  padding: 0rem 0rem 0em 2em;
+}
+@media (max-width: 1150px) {
+  .p2-l-nm {
+    padding: 0rem 0rem 0em 1em;
+  }
+}
+@media (max-width: 768px) {
+  .p2-l-nm {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.p3-r-nm {
+  padding: 0rem 3rem 0em 0em;
+}
+@media (max-width: 1150px) {
+  .p3-r-nm {
+    padding: 0rem 1.5rem 0em 0em;
+  }
+}
+@media (max-width: 768px) {
+  .p3-r-nm {
+    padding: 0;
+  }
+}
+
+.p3-l-nm {
+  padding: 0rem 0rem 0em 3em;
+}
+@media (max-width: 1150px) {
+  .p3-l-nm {
+    padding: 0rem 0rem 0em 1.5em;
+  }
+}
+@media (max-width: 768px) {
+  .p3-l-nm {
+    padding: 0;
+  }
+}
+
+.p5-l-nm {
+  padding: 0rem 0rem 0em 5em;
+}
+@media (max-width: 1150px) {
+  .p5-l-nm {
+    padding: 0rem 0rem 0em 2em;
+  }
+}
+@media (max-width: 768px) {
+  .p5-l-nm {
+    padding: 0;
+  }
+}
+
+.p5-r-nm {
+  padding: 0rem 5rem 0em 0em;
+}
+@media (max-width: 1150px) {
+  .p5-r-nm {
+    padding: 0rem 2rem 0em 0em;
+  }
+}
+@media (max-width: 768px) {
+  .p5-r-nm {
+    padding: 0;
+  }
+}
+
+.ptb-2-nm {
+  padding: 2rem 0rem;
+}
+@media (max-width: 768px) {
+  .ptb-2-nm {
+    padding: 0;
+  }
+}
+
+.p2-t-nm {
+  padding-top: 2rem;
+}
+@media (max-width: 768px) {
+  .p2-t-nm {
+    padding: 0;
+  }
+}
+
+.p2-b-nm {
+  padding-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .p2-b-nm {
+    padding: 0;
+  }
+}
+
+.p1-tb-nm {
+  padding: 1rem 0rem;
+}
+@media (max-width: 768px) {
+  .p1-tb-nm {
+    padding: 0;
+  }
+}
+
+.mt-5-nm {
+  margin-top: 5rem;
+}
+@media (max-width: 768px) {
+  .mt-5-nm {
+    padding: 0;
+  }
+}
+
+.mt-3-nm {
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .mt-3-nm {
+    padding: 0;
+  }
+}
+
+.m-r-15-nm {
+  margin-right: 15px;
+}
+@media (max-width: 650px) {
+  .m-r-15-nm {
+    margin-right: 0;
+  }
+}
+
+.m-l-15-nm {
+  margin-left: 15px;
+}
+@media (max-width: 650px) {
+  .m-l-15-nm {
+    margin-left: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+ # Width classes
+ --------------------------------------------------------------*/
+.w-50 {
+  width: 50%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .w-50 {
+    width: 100%;
+  }
+}
+
+.w-50-nb {
+  width: 50%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.w-30 {
+  width: 30%;
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .w-30 {
+    width: 100%;
+  }
+}
+
+.w-35 {
+  width: 35%;
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .w-35 {
+    width: 100%;
+  }
+}
+
+.w-40 {
+  width: 40%;
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .w-40 {
+    width: 100%;
+  }
+}
+
+.w-60 {
+  width: 60%;
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .w-60 {
+    width: 100%;
+  }
+}
+
+.w-65 {
+  width: 65%;
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .w-65 {
+    width: 100%;
+  }
+}
+
+.w-70 {
+  width: 70%;
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .w-70 {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Text Align
+--------------------------------------------------------------*/
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*--------------------------------------------------------------
+  # Color Classes
+ --------------------------------------------------------------*/
+.white {
+  color: #fff !important;
+}
+
+.black {
+  color: #000;
+}
+
+.green {
+  color: #708313;
+}
+
+.bronze {
+  color: #98571D !important;
+}
+
+.gold {
+  color: #bd9a5f;
+}
+
+.bg-gold {
+  background-color: #bd9a5f;
+}
+
+.bg-white {
+}
+
+.bg-bronze {
+  background-color: #98571D;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+/*
+main {
+    min-height: 90vh;
+  }
+  */
+
+/* Background video */
+.masthead-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Soft overlay so text/images pop */
+.video-overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+}
+
+/* Keep everything above video */
+.collage-container {
+  position: relative;
+  z-index: 5;
+}
+
+.masthead-text {
+  z-index: 20;
+}
+
+.collage-img {
+  z-index: 10;
+}
+
+/* Mountain background stays above video */
+.mountain-bg {
+  z-index: 2;
+}
+
+.masthead {
+  position: relative;
+  height: 200vh;
+  overflow: hidden;
+  background: #f9e7cd;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0.55) 50%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  z-index: 1;
+}
+
+.collage-container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px; /* enable 3D-like parallax */
+}
+
+.collage-img {
+  position: absolute;
+  width: 26%;
+  border-radius: 12px;
+  object-fit: cover;
+  opacity: 0.95;
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+/* Image placements */
+.img-a {
+  top: 6%;
+  left: 0%;
+}
+
+.img-b {
+  top: 18%;
+  right: 4%;
+}
+
+.img-c {
+  top: 40%;
+  left: 18%;
+}
+
+.img-d {
+  top: 58%;
+  right: 12%;
+}
+
+.img-e {
+  top: 75%;
+  left: 5%;
+}
+
+.img-f {
+  top: 25%;
+  left: 55%;
+}
+
+.img-g {
+  top: 52%;
+  left: 70%;
+}
+
+.img-h {
+  top: 8%;
+  left: 32%;
+}
+
+.img-i {
+  top: 67%;
+  right: 28%;
+}
+
+.img-j {
+  top: 85%;
+  left: 40%;
+}
+
+/* Masthead text follows page scroll */
+
+.masthead-text {
+  position: relative;
+  top: 45vh;
+  max-width: 700px;
+  padding: 2rem 2.5rem;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 10;
+}
+
+.masthead-text h1,
+.masthead-text h3,
+.masthead-text p {
+  color: #fff;
+  text-shadow: 
+    0 2px 8px rgba(0,0,0,0.1),
+    0 6px 20px rgba(0,0,0,0.25);
+}
+
+.masthead-text h3 {
+  color:#bcca70;
+}
+
+.masthead-text p.large {
+  font-weight:500;
+}
+
+.small {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .collage-img {
+    width: 42%;
+  }
+  .title {
+    font-size: 3rem;
+  }
+
+  .collage-container img {
+   display:none;
+  }
+
+  .masthead {
+    height:70vh;
+  }
+
+  .masthead-text {
+    top:20vh;
+  }
+}
+@media (max-width: 600px) {
+  .collage-img {
+    width: 80%;
+    left: 10% !important;
+    right: auto !important;
+  }
+  .masthead-text {
+    top: 10vh;
+  }
+  .title {
+    font-size: 2.4rem;
+  }
+}
+.mountain-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75vh;
+  background-image: url("https://octanecdn.com/yonahmountainvineyardscom/images/history-bg@2x.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  z-index: 1;
+  transform: translateY(0);
+  will-change: transform;
+}
+
+
+section.timeline-section {
+  background: #f9e7cd;
+  padding:3rem 0;
+}
+
+.timeline {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.timeline h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #4a6741;
+  font-family: "IM Fell English", serif;
+}
+
+.timeline-container {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  background: #4a6741;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+span.time {
+  font-family: "IM Fell English", serif;
+  font-size:2rem;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #bd9a5f;
+  border-radius: 50%;
+  top: 20px;
+  z-index: 1;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 4px #98571D;
+}
+
+.timeline-item:nth-child(odd)::before {
+  right: -10px;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -10px;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 0px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/*
+@media screen and (max-width: 768px) {
+  .timeline-item, .timeline-item:nth-child(even), .timeline-item:nth-child(odd) {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    padding-left: 60px;
+  }
+  .timeline-item::before {
+    left: 20px !important;
+  }
+}
+  */
+
+section.about {
+  padding: 5rem;
+  background: rgba(243, 237, 216, 0.3);
+}
+
+/* Fancy Grid Base */
+.fancy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+  grid-auto-rows: minmax(300px, auto);   /* ensure each row is at least 300px */
+  gap: 0rem;
+  padding: 0rem 0;
+}
+
+/* Grid Items */
+.fancy-grid .item {
+  background: #fff;
+  padding: 5rem;
+  border-radius: 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Images inside grid */
+.fancy-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* Video Tiles */
+.video-tile {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.video-tile video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Optional overlay on video */
+.video-tile-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); /* dark overlay for text readability */
+  z-index: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .fancy-grid {
+    grid-template-columns: 1fr; /* single column */
+    grid-auto-rows: minmax(300px, auto);
+  }
+
+  .fancy-grid .item {
+    padding: 5rem 2rem;
+  }
+
+  .video-tile {
+    min-height: 300px; /* mobile-friendly height */
+  }
+
+  .fancy-grid .item.e {
+    display:none;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .fancy-grid .item {
+    padding: 3rem 1.5rem;
+    border-radius: 0;
+  }
+
+  .video-tile {
+    min-height: 300px;
+  }
+
+  section.about {
+    padding:3rem 1.5rem; 
+  }
+
+}
+
+
+.fancy-grid .item.a {
+  background: white
+}
+
+.fancy-grid .item.b {
+  background: #f3f0e1;
+}
+
+.fancy-grid .item.c {
+  background: #f3f0e1;
+}
+
+.fancy-grid .item.d {
+  background:white;
+}
+
+.fancy-grid .item.e {
+  background: white;
+}
+
+.fancy-grid .item.f {
+  background: #f3f0e1;
+}
+
+.fancy-grid .item.g {
+  background: #ebcfa7;
+}
+
+.fancy-grid .item.h {
+  background: #f3f0e1;
+}
+
+
+
+.faq-wrap {
+  width: 100%;
+  max-width: var(--maxw);
+  background: transparent;
+}
+
+header.faq-header {
+  margin-bottom: 18px;
+}
+
+header.faq-header h1 {
+  font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+}
+
+header.faq-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.accordion {
+  background: transparent;
+  display: block;
+  border-radius:0;
+  overflow: visible;
+}
+
+.accordion-item {
+  background:transparent;
+  margin-bottom: var(--gap);
+  border-radius: 0;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  border-bottom:1px solid #4a6741;
+}
+
+/* Header (the clickable button) */
+.accordion-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 18px 15px;
+  gap: 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.accordion-header:focus {
+  outline: 3px solid rgba(107, 142, 35, 0.18);
+  outline-offset: 3px;
+  border-radius: 0;
+}
+
+.accordion-title {
+  flex: 1;
+  color: #98571D !important;
+  font-family: "IM Fell English", serif;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  font-weight: 500;
+}
+
+.accordion-meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-left: 8px;
+}
+
+/* chevron */
+.chev {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.22s ease;
+  transform-origin: center;
+  color: #d06324;
+  flex-shrink: 0;
+}
+
+.chev span {
+  color:#4a6741;
+}
+
+/* Panel (the content) */
+.accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.28s cubic-bezier(0.2, 0.9, 0.2, 1), padding 0.18s ease;
+  padding: 0 18px;
+}
+
+.accordion-panel-inner {
+  padding: 18px 0 22px;
+  color: var(--text);
+  line-height: 1.58;
+}
+
+/* When expanded */
+.accordion-item[aria-expanded=true] {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(16, 24, 40, 0.08);
+}
+
+.accordion-item[aria-expanded=true] .accordion-panel {
+  padding: 0 18px 18px;
+}
+
+.accordion-item[aria-expanded=true] .chev {
+  transform: rotate(180deg);
+}
+
+/* small screens */
+@media (max-width: 520px) {
+  body {
+    padding: 0;
+  }
+  .accordion-header {
+    padding: 14px;
+  }
+  .accordion-panel {
+    padding: 0 14px;
+  }
+  .accordion-panel-inner {
+    padding: 14px 0 18px;
+  }
+}
+.rsvp-wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #f7f7f7;
+  border-radius: 14px;
+  font-family: system-ui, sans-serif;
+}
+
+.rsvp-wrapper h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+form button {
+  font-size: 2rem !important; 
+  border-radius:0 !important;
+}
+
+form input {
+  width:90% !important;
+  margin-bottom:1rem;
+}
+
+form select {
+  width:96.5% !important;
+  margin-bottom:1rem;
+}
+
+form label {
+  font-size:1.8rem !important;
+  font-weight:600 !important;
+  margin-bottom:3rem !important;
+  font-family: "IM Fell English", serif !important;
+  color:#4a6741;
+}
+
+
+.success-message {
+  display: none;
+  margin-top: 20px;
+  padding: 16px;
+  background: #e6f4ea;
+  color: #2f6b33;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/*PHOTO gallery*/
+
+
+.grid-masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-auto-rows: 10px;
+  gap: 20px;
+  max-width:99%;
+  margin: 0 auto;
+}
+
+.masonry-item {
+  position: relative;
+  overflow: hidden;
+}
+
+/* THIS IS CRITICAL */
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.masonry img,
+.grid-masonry img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.masonry img:hover,
+.grid-masonry img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+section.registry {
+  background: #f9e7cd;
+}
+
+section.info-header {
+  background: #ebcfa7;
+}
+
+footer {
+  background:#4a6741;
+}
+
+footer p {
+  font-family: "IM Fell English", serif;
+}
+
+/*timeline*/
+.timeline-section {
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+/* Background video */
+.timeline-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Elegant overlay for readability */
+.timeline-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* Keep timeline content above video */
+.timeline-section .content-wrapper-md {
+  position: relative;
+  z-index: 5;
+}
+
+
+.timeline-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #6b8e23;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 1.2rem;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 4px solid #6b8e23;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.left::before {
+  right: -8px;
+}
+
+.timeline-item.right::before {
+  left: -8px;
+}
+
+.timeline-content {
+  background:white;
+  padding: 1.5rem 1rem;
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  max-width: 300px;
+}
+
+.timeline-content .time {
+  font-weight: 600;
+  color: #6b8e23;
+  margin-bottom: 0.25rem;
+  display: block;
+  font-family: "IM Fell English", serif;
+  font-size:2.5rem;
+  
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #333;
+}
+
+/* Responsive */
+/*
+@media screen and (max-width: 768px) {
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-item::before {
+    left: -8px !important;
+  }
+}
+*/
+
+   /* Sticky Header */
+   header.sticky-header {
+    position: sticky;
+    top: 0;
+    background: #4a6741;
+    z-index: 999;
+    display: flex;
+    flex-wrap: nowrap; /* prevent wrapping */
+    overflow-x: auto;  /* enable horizontal scroll */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+    justify-content: center;
+    gap: 4rem;
+    padding: 1rem 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Hide scrollbar for Webkit browsers */
+header.sticky-header::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header.sticky-header {
+   gap: 3rem;
+   padding: 1rem;
+   justify-content: flex-start;
+   align-items: center;
+  }
+}
+
+
+  header.sticky-header a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size:20px;
+    font-family: "IM Fell English", serif;
+    color:#fff;
+    transition: color 0.3s;
+  }
+
+  header.sticky-header a:hover {
+    color: #a2c23c;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+  .wedding-slider {
+    padding: 4rem 0;
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: visible;
+    /*border-radius: 28px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.18);*/
+  }
+  
+  /* Responsive height */
+  .slider-track {
+    position: relative;
+    width: 100%;
+    height: clamp(320px, 60vh, 520px);
+  }
+  
+  /* Slides fill container */
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  /* Image fills perfectly */
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* KEY FIX */
+    object-position:top;
+    display: block;
+  }
+
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.75);
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  @media (max-width: 768px) {
+    .slider-btn {
+      width: 38px;
+      height: 38px;
+      font-size: 1.6rem;
+    }
+  }
+
+  .prev, .next {
+    display:none; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;}
+  
+  .prev { left: 16px; }
+  .next { right: 16px; }
+  
+  .slider-dots {
+    position: absolute;
+    bottom: -10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    z-index: 10;
+  }
+
+  .registry-block {
+    margin-top:8rem;
+  }
+
+  @media (max-width: 900px) {
+    .registry-block {
+      margin-top:0rem;
+    }
+  }
+   
+  @media (max-width: 600px) {
+    .slider-dots {
+      bottom: -7%;
+    }
+
+    .registry-block {
+      margin-top:0rem;
+    }
+  }
+  
+  
+  .slider-dots button {
+    width: 12px;
+    height: 14px;
+    border-radius: 50%;
+    background: transparent;
+    border:1px solid #4a6741;
+  }
+  
+  .slider-dots button.active {
+    background: #4a6741;
+  }
+  
+  .slide figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .slide figcaption {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem 2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    color: #fff;
+  
+    /* soft readable overlay */
+    background: linear-gradient(
+      to top,
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0)
+    );
+  
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  /* Show caption only on active slide */
+  .slide.active figcaption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .dark-green {
+    color:#4a6741 !important;
+  }
