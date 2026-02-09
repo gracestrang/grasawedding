@@ -590,7 +590,7 @@ h1, h1 a, h1 span {
 @media (max-width: 650px) {
   h1, h1 a, h1 span {
     font-family: "IM Fell English", serif;
-    font-size: 3.649rem;
+    font-size: 4.649rem;
     line-height: 4.196rem;
     font-weight: 400;
     color: #000;
@@ -2188,7 +2188,7 @@ main {
     top: 10vh;
   }
   .title {
-    font-size: 2.4rem;
+    font-size: 3.4rem;
   }
 }
 .mountain-bg {
