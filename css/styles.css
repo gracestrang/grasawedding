@@ -510,6 +510,12 @@ body {
   width: auto;
   margin: 0;
   text-rendering: optimizeLegibility;
+  /* Match fallback font metrics to Google Font */
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-variation-settings: "wght" 400;
+  /* Optional metric overrides if using variable fonts */
+  font-optical-sizing: auto;
+
 }
 
 html {
