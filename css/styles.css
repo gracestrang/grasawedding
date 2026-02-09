@@ -2138,7 +2138,7 @@ main {
     0 6px 20px rgba(0,0,0,0.25);
 }
 
-.masthead-text h3 {
+.masthead-text h2 {
   color:#bcca70;
 }
 
@@ -2429,7 +2429,7 @@ section.about {
 }
 
 .fancy-grid .item.g {
-  background: #ebcfa7;
+  background: #ffeacc;
 }
 
 .fancy-grid .item.h {
@@ -2661,7 +2661,7 @@ section.registry {
 }
 
 section.info-header {
-  background: #ebcfa7;
+  background: #ffeacc;
 }
 
 footer {
@@ -3012,4 +3012,15 @@ header.sticky-header::-webkit-scrollbar {
   
   .dark-green {
     color:#4a6741 !important;
+  }
+
+  .accordion-header[aria-expanded="true"] .chev {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  .accordion-panel {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
   }

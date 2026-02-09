@@ -44,135 +44,104 @@
   });
   
   (function(){
-    // Simple accessible accordion behavior
     const accordions = document.querySelectorAll('.accordion-item');
-
-    // Toggle single item
+  
     function toggleItem(item, setTo){
       const btn = item.querySelector('.accordion-header');
       const panel = item.querySelector('.accordion-panel');
-      const isOpen = item.getAttribute('aria-expanded') === 'true';
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
       const open = typeof setTo === 'boolean' ? setTo : !isOpen;
-
-      item.setAttribute('aria-expanded', open ? 'true' : 'false');
+  
+      // Update button
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-
-      if (open) {
-        // set max-height to scrollHeight for animation
+  
+      // Update panel
+      if(open){
+        panel.hidden = false;
         panel.style.maxHeight = panel.scrollHeight + 'px';
       } else {
         panel.style.maxHeight = '0';
+        panel.hidden = true;
       }
     }
-
-    // Initialize: ensure panels have correct maxHeight if open
+  
+    // Initialize panels
     accordions.forEach(item => {
+      const btn = item.querySelector('.accordion-header');
       const panel = item.querySelector('.accordion-panel');
-      if (item.getAttribute('aria-expanded') === 'true') {
+      if(btn.getAttribute('aria-expanded') === 'true'){
+        panel.hidden = false;
         panel.style.maxHeight = panel.scrollHeight + 'px';
-        item.querySelector('.accordion-header').setAttribute('aria-expanded','true');
       } else {
+        panel.hidden = true;
         panel.style.maxHeight = '0';
-        item.querySelector('.accordion-header').setAttribute('aria-expanded','false');
       }
     });
-
-    // Click behavior & keyboard
-    document.querySelectorAll('.accordion-header').forEach((btn, index, list) => {
-      const item = btn.closest('.accordion-item');
-
-      btn.addEventListener('click', () => {
-        toggleItem(item);
-      });
-
-      // keyboard navigation for accessibility
-      btn.addEventListener('keydown', (e) => {
-        const key = e.key;
-        const headers = Array.from(document.querySelectorAll('.accordion-header'));
-        let idx = headers.indexOf(btn);
-
-        if (key === 'ArrowDown') {
-          e.preventDefault();
-          const next = headers[(idx + 1) % headers.length];
-          next.focus();
-        } else if (key === 'ArrowUp') {
-          e.preventDefault();
-          const prev = headers[(idx - 1 + headers.length) % headers.length];
-          prev.focus();
-        } else if (key === 'Home') {
-          e.preventDefault();
-          headers[0].focus();
-        } else if (key === 'End') {
-          e.preventDefault();
-          headers[headers.length - 1].focus();
-        } else if (key === 'Enter' || key === ' ') {
-          e.preventDefault();
-          toggleItem(item);
-        } else if (key === 'Escape') {
-          // close if open
-          if (item.getAttribute('aria-expanded') === 'true') {
-            toggleItem(item, false);
-            btn.focus();
-          }
-        }
-      });
-    });
-
-    // Optional: close others when opening one (accordion behavior)
-    // If you prefer allowing multiple open panels at once, comment this block out.
+  
+    // Click & keyboard events
     document.querySelectorAll('.accordion-header').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const currentItem = btn.closest('.accordion-item');
-        const willOpen = currentItem.getAttribute('aria-expanded') !== 'true';
-        if (willOpen) {
-          // close all others
+      const item = btn.closest('.accordion-item');
+  
+      btn.addEventListener('click', () => {
+        const willOpen = btn.getAttribute('aria-expanded') !== 'true';
+        toggleItem(item);
+  
+        // Optional: close others (accordion behavior)
+        if(willOpen){
           accordions.forEach(it => {
-            if (it !== currentItem) toggleItem(it, false);
+            if(it !== item) toggleItem(it, false);
           });
         }
       });
+  
+      btn.addEventListener('keydown', e => {
+        const headers = Array.from(document.querySelectorAll('.accordion-header'));
+        const idx = headers.indexOf(btn);
+  
+        switch(e.key){
+          case 'ArrowDown':
+            e.preventDefault();
+            headers[(idx+1)%headers.length].focus();
+            break;
+          case 'ArrowUp':
+            e.preventDefault();
+            headers[(idx-1+headers.length)%headers.length].focus();
+            break;
+          case 'Home':
+            e.preventDefault();
+            headers[0].focus();
+            break;
+          case 'End':
+            e.preventDefault();
+            headers[headers.length-1].focus();
+            break;
+          case 'Enter':
+          case ' ':
+            e.preventDefault();
+            toggleItem(item);
+            break;
+          case 'Escape':
+            if(btn.getAttribute('aria-expanded') === 'true'){
+              toggleItem(item, false);
+              btn.focus();
+            }
+            break;
+        }
+      });
     });
-
-    // On window resize, reset max-heights for open panels to match new heights
+  
+    // Resize: adjust maxHeight
     let resizeTimer;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
         accordions.forEach(item => {
           const panel = item.querySelector('.accordion-panel');
-          if (item.getAttribute('aria-expanded') === 'true') {
+          if(item.querySelector('.accordion-header').getAttribute('aria-expanded') === 'true'){
             panel.style.maxHeight = panel.scrollHeight + 'px';
           }
         });
       }, 120);
     });
-
   })();
-
-    // Simple RSVP form handler (local only)
-    const form = document.getElementById("rsvpForm");
-    const successMessage = document.getElementById("successMessage");
-    const guestWrapper = document.getElementById("guestCountWrapper");
-    const attendance = document.getElementById("attendance");
   
-    attendance.addEventListener("change", () => {
-      // Hide guest count if declining
-      if (attendance.value === "decline") {
-        guestWrapper.style.display = "none";
-      } else {
-        guestWrapper.style.display = "block";
-      }
-    });
-  
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-  
-      // Show success message
-      successMessage.style.display = "block";
-  
-      // Clear form
-      form.reset();
-      guestWrapper.style.display = "block";
-    });
-
-
