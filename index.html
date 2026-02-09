@@ -70,7 +70,7 @@
   <!-- Background Video -->
     <video class="masthead-video" autoplay muted loop playsinline>
       <source src="./images/videos/grapevines-bg-video.mp4" type="video/mp4">
-      <track kind="captions" srclang="en" label="English captions" default>
+    
       <!-- Optional fallback -->
     </video>
   
@@ -447,7 +447,6 @@
               </button>
               <div class="accordion-panel" id="panel-12" role="region" aria-labelledby="btn-12" hidden>
                 <div class="accordion-panel-inner">
-                  <p>October in Helen is pure magic — crisp mountain air, vibrant fall foliage, and a charming Bavarian-style town full of cozy charm and fun activities for everyone. Just a short drive from Yonah Mountain Vineyards, Helen makes for the perfect weekend adventure before or after the wedding. Wander the walkable downtown streets lined with boutique shops, artisan candies, and local eateries. Sip warm apple cider, sample craft brews, or stop in at a bakery for a sweet treat while you take in the stunning autumn scenery. The mountains around Helen come alive with fiery reds, oranges, and yellows — perfect for scenic drives, peaceful hikes, or photos with dramatic fall backdrops.</p>
                     
                   <p>For those who enjoy outdoor fun, explore Anna Ruby Falls, go tubing or kayaking on the Chattahoochee River, or hike one of the many trails in Unicoi State Park and the surrounding foothills. And don't miss the seasonal festivals and pumpkin patches that pop up throughout the valley — they're classic fall experiences that are as fun for families as they are for couples.</p>
                     
@@ -470,15 +469,14 @@
               </div>
             </div>
 
-
       
             
-            <div class="accordion-item" id="item-14" aria-expanded="false">
+            <div class="accordion-item" id="item-14">
               <button class="accordion-header wow fadeInUp" aria-controls="panel-14" aria-expanded="false" id="btn-14">
                 <span class="accordion-title">Who do I contact with questions?</span>
                 <span class="chev" aria-hidden="true"><span class="material-symbols-outlined">keyboard_arrow_down</span></span>
               </button>
-              <div class="accordion-panel" id="panel-14" role="region" aria-labelledby="btn-14">
+              <div class="accordion-panel" id="panel-14" role="region" aria-labelledby="btn-14" hidden>
                 <div class="accordion-panel-inner">
                   <p>For planning questions, email Grace at stranggrace@gmail.com. For urgent day-of needs, email our wedding planner at <em>Samantha@yonahmountainvineyards.com</em>.</p>
                 </div>
@@ -495,6 +493,7 @@
    <!-- Background Video -->
   <video class="timeline-bg-video" autoplay muted loop playsinline>
     <source src="./images/videos/grapevines-2.mp4" type="video/mp4">
+    <track kind="captions" srclang="en" label="English captions" default>
   </video>
 
   <!-- Overlay -->
@@ -627,9 +626,6 @@
     slides[index].classList.add('active');
     dots[index].classList.add('active');
     dots[index].setAttribute('aria-current', 'true'); // mark new active
-
-    // Move slides container for smooth transition
-    document.querySelector('.slides').style.transform = `translateX(-${index * 100}%)`;
 
     resetAutoplay();
   }
