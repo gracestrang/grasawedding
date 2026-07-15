@@ -809,7 +809,7 @@ p.small, p.small a, span.small, span.small a, small, small a, p.meta {
 }
 
 small strong {
-  font-weight:bold;
+  font-weight:bold !important;
 }
 
 p.small em, p.small i, p.small a em, p.small a i, span.small em, span.small i, span.small a em, span.small a i, small em, small i, small a em, small a i, p.meta em, p.meta i {
