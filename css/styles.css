@@ -807,6 +807,11 @@ p.small, p.small a, span.small, span.small a, small, small a, p.meta {
   font-weight: 400;
   color: #000;
 }
+
+small strong {
+  font-weight:bold;
+}
+
 p.small em, p.small i, p.small a em, p.small a i, span.small em, span.small i, span.small a em, span.small a i, small em, small i, small a em, small a i, p.meta em, p.meta i {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
