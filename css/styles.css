@@ -2608,14 +2608,14 @@ form input {
 }
 
 form select {
-  width:96.5% !important;
+  width:95.5% !important;
   margin-bottom:1rem;
 }
 
 form label {
   font-size:1.8rem !important;
   font-weight:600 !important;
-  margin-bottom:3rem !important;
+  margin-bottom:4rem !important;
   font-family: "IM Fell English", serif !important;
   color:#4a6741;
 }
